@@ -1,0 +1,924 @@
+<html><h2 id="crossreference" class="list">Cross reference for Construction Planning classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by Construction Planning.
+<div id="classes">
+   <h3 id="classes-headline" class="list">Classes</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#Activity" title="http://bim.aalto.fi/DiCtion/Ontology/Activity">
+            <span>activity</span>
+         </a>
+      </li>
+      <li>
+         <a href="#ActivityType"
+            title="http://bim.aalto.fi/DiCtion/Ontology/ActivityType">
+            <span>activity type</span>
+         </a>
+      </li>
+      <li>
+         <a href="#CapabilityRequirement"
+            title="http://bim.aalto.fi/DiCtion/Ontology/CapabilityRequirement">
+            <span>capability requirement</span>
+         </a>
+      </li>
+      <li>
+         <a href="#CapabilityType"
+            title="http://bim.aalto.fi/DiCtion/Ontology/CapabilityType">
+            <span>capability type</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Capacity" title="http://bim.aalto.fi/DiCtion/Ontology/Capacity">
+            <span>capacity</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Condition" title="http://bim.aalto.fi/DiCtion/Ontology/Condition">
+            <span>condition</span>
+         </a>
+      </li>
+      <li>
+         <a href="#DomainObject"
+            title="http://bim.aalto.fi/DiCtion/Ontology/DomainObject">
+            <span>domain object</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Event" title="http://bim.aalto.fi/DiCtion/Ontology/Event">
+            <span>event</span>
+         </a>
+      </li>
+      <li>
+         <a href="#InformationEntity"
+            title="http://bim.aalto.fi/DiCtion/Ontology/InformationEntity">
+            <span>information entity</span>
+         </a>
+      </li>
+      <li>
+         <a href="#ObjectTimeInterval"
+            title="http://bim.aalto.fi/DiCtion/Ontology/ObjectTimeInterval">
+            <span>object time interval</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Requirement" title="http://bim.aalto.fi/DiCtion/Ontology/Requirement">
+            <span>requirement</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Resource" title="http://bim.aalto.fi/DiCtion/Ontology/Resource">
+            <span>resource</span>
+         </a>
+      </li>
+      <li>
+         <a href="#ResourceType"
+            title="http://bim.aalto.fi/DiCtion/Ontology/ResourceType">
+            <span>resource type</span>
+         </a>
+      </li>
+      <li>
+         <a href="#ResourceTypeRequirement"
+            title="http://bim.aalto.fi/DiCtion/Ontology/ResourceTypeRequirement">
+            <span>resource type requirement</span>
+         </a>
+      </li>
+   </ul>
+   <div class="entity" id="Activity">
+      <h3>activity<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://bim.aalto.fi/DiCtion/Ontology/Activity</p>
+      <div class="comment">
+         <span class="markdown">Activity is the concept refers to all the works (or aggregations of works) that carried out in a construction project.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#DomainObject"
+               title="http://bim.aalto.fi/DiCtion/Ontology/DomainObject">domain object</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dd>
+            <a href="#ObjectTimeInterval"
+               title="http://bim.aalto.fi/DiCtion/Ontology/ObjectTimeInterval">object time interval</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dd>
+            <a href="#hasType" title="http://bim.aalto.fi/DiCtion/Ontology/hasType">has type</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">only</span> 
+            <a href="#ActivityType"
+               title="http://bim.aalto.fi/DiCtion/Ontology/ActivityType">activity type</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasCondition" title="http://bim.aalto.fi/DiCtion/Ontology/hasCondition">has condition</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasType" title="http://bim.aalto.fi/DiCtion/Ontology/hasType">has type</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#precedes" title="http://bim.aalto.fi/DiCtion/Ontology/precedes">precedes</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#requires" title="http://bim.aalto.fi/DiCtion/Ontology/requires">requires</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#precedes" title="http://bim.aalto.fi/DiCtion/Ontology/precedes">precedes</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ActivityType">
+      <h3>activity type<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://bim.aalto.fi/DiCtion/Ontology/ActivityType</p>
+      <div class="comment">
+         <span class="markdown">The type of the activity</span>
+      </div>
+      <dl class="description">
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasType" title="http://bim.aalto.fi/DiCtion/Ontology/hasType">has type</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="CapabilityRequirement">
+      <h3>capability requirement<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://bim.aalto.fi/DiCtion/Ontology/CapabilityRequirement</p>
+      <div class="comment">
+         <span class="markdown">Capability requirement refers that an activity requires the resource should have specific capability.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Requirement" title="http://bim.aalto.fi/DiCtion/Ontology/Requirement">requirement</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dd>
+            <a href="#hasType" title="http://bim.aalto.fi/DiCtion/Ontology/hasType">has type</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">only</span> 
+            <a href="#CapabilityType"
+               title="http://bim.aalto.fi/DiCtion/Ontology/CapabilityType">capability type</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasType" title="http://bim.aalto.fi/DiCtion/Ontology/hasType">has type</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="CapabilityType">
+      <h3>capability type<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://bim.aalto.fi/DiCtion/Ontology/CapabilityType</p>
+      <div class="comment">
+         <span class="markdown">The type of the capability that the resource has</span>
+      </div>
+      <dl class="description">
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasType" title="http://bim.aalto.fi/DiCtion/Ontology/hasType">has type</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Capacity">
+      <h3>capacity<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://bim.aalto.fi/DiCtion/Ontology/Capacity</p>
+      <div class="comment">
+         <span class="markdown">Capacity concept refers to the maxium amount of a resource or material that is provided to the construction site.</span>
+      </div>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasWorkRate" title="http://bim.aalto.fi/DiCtion/Ontology/hasWorkRate">has work rate</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasCapability"
+               title="http://bim.aalto.fi/DiCtion/Ontology/hasCapability">has capability</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Condition">
+      <h3>condition<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://bim.aalto.fi/DiCtion/Ontology/Condition</p>
+      <div class="comment">
+         <span class="markdown">Condition is a concept to capture a semantically meaningful state of an object, such as its location or temperature at a level that is needed for construction management.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#ObjectTimeInterval"
+               title="http://bim.aalto.fi/DiCtion/Ontology/ObjectTimeInterval">object time interval</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#isDerivedfrom"
+               title="http://bim.aalto.fi/DiCtion/Ontology/isDerivedfrom">is derivedfrom</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasCondition" title="http://bim.aalto.fi/DiCtion/Ontology/hasCondition">has condition</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="DomainObject">
+      <h3>domain object<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://bim.aalto.fi/DiCtion/Ontology/DomainObject</p>
+      <div class="comment">
+         <span class="markdown">Domain objects is a abstract concept that refers to all the central objects that are discussed in the construction project planning and management. Sub-classes of the domain object include the 'Activity','Group','Information Entity','Physical Entity',and 'Resource'.</span>
+      </div>
+      <dl class="description">
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#Activity" title="http://bim.aalto.fi/DiCtion/Ontology/Activity">activity</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#InformationEntity"
+               title="http://bim.aalto.fi/DiCtion/Ontology/InformationEntity">information entity</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Resource" title="http://bim.aalto.fi/DiCtion/Ontology/Resource">resource</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasObject" title="http://bim.aalto.fi/DiCtion/Ontology/hasObject">has object</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Event">
+      <h3>event<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://bim.aalto.fi/DiCtion/Ontology/Event</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#InformationEntity"
+               title="http://bim.aalto.fi/DiCtion/Ontology/InformationEntity">information entity</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#isDerivedfrom"
+               title="http://bim.aalto.fi/DiCtion/Ontology/isDerivedfrom">is derivedfrom</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="InformationEntity">
+      <h3>information entity<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://bim.aalto.fi/DiCtion/Ontology/InformationEntity</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#DomainObject"
+               title="http://bim.aalto.fi/DiCtion/Ontology/DomainObject">domain object</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#Event" title="http://bim.aalto.fi/DiCtion/Ontology/Event">event</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ObjectTimeInterval">
+      <h3>object time interval<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://bim.aalto.fi/DiCtion/Ontology/ObjectTimeInterval</p>
+      <div class="comment">
+         <span class="markdown">A temporal entity with an extent or duration that has related domain object.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="http://www.w3.org/2006/time#Interval">interval</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#Activity" title="http://bim.aalto.fi/DiCtion/Ontology/Activity">activity</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Condition" title="http://bim.aalto.fi/DiCtion/Ontology/Condition">condition</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasObject" title="http://bim.aalto.fi/DiCtion/Ontology/hasObject">has object</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Requirement">
+      <h3>requirement<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://bim.aalto.fi/DiCtion/Ontology/Requirement</p>
+      <div class="comment">
+         <span class="markdown">The requirement concept refers to the request of the resource for one activity, which including capability requirement and the resource type requirement of the resource.</span>
+      </div>
+      <dl class="description">
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#CapabilityRequirement"
+               title="http://bim.aalto.fi/DiCtion/Ontology/CapabilityRequirement">capability requirement</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#ResourceTypeRequirement"
+               title="http://bim.aalto.fi/DiCtion/Ontology/ResourceTypeRequirement">resource type requirement</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasRequiredAmount"
+               title="http://bim.aalto.fi/DiCtion/Ontology/hasRequiredAmount">has required amount</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasUnit" title="http://bim.aalto.fi/DiCtion/Ontology/hasUnit">has unit</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#requires" title="http://bim.aalto.fi/DiCtion/Ontology/requires">requires</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Resource">
+      <h3>resource<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://bim.aalto.fi/DiCtion/Ontology/Resource</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#DomainObject"
+               title="http://bim.aalto.fi/DiCtion/Ontology/DomainObject">domain object</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasCapability"
+               title="http://bim.aalto.fi/DiCtion/Ontology/hasCapability">has capability</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasUnit" title="http://bim.aalto.fi/DiCtion/Ontology/hasUnit">has unit</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ResourceType">
+      <h3>resource type<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://bim.aalto.fi/DiCtion/Ontology/ResourceType</p>
+      <div class="comment">
+         <span class="markdown">The type of the resource</span>
+      </div>
+      <dl class="description">
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasType" title="http://bim.aalto.fi/DiCtion/Ontology/hasType">has type</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ResourceTypeRequirement">
+      <h3>resource type requirement<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://bim.aalto.fi/DiCtion/Ontology/ResourceTypeRequirement</p>
+      <div class="comment">
+         <span class="markdown">Resource Type requirement refers that an activity requires the resource should have specific type.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Requirement" title="http://bim.aalto.fi/DiCtion/Ontology/Requirement">requirement</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dd>
+            <a href="#hasType" title="http://bim.aalto.fi/DiCtion/Ontology/hasType">has type</a>
+            <sup class="type-op" title="object property">op</sup> 
+            <span class="logic">only</span> 
+            <a href="#ResourceType"
+               title="http://bim.aalto.fi/DiCtion/Ontology/ResourceType">resource type</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasType" title="http://bim.aalto.fi/DiCtion/Ontology/hasType">has type</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div id="objectproperties">
+   <h3 id="properties" class="list">Object Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#addEffect" title="http://bim.aalto.fi/DiCtion/Ontology/addEffect">
+            <span>add effect</span>
+         </a>
+      </li>
+      <li>
+         <a href="#completionCondition"
+            title="http://bim.aalto.fi/DiCtion/Ontology/completionCondition">
+            <span>completion condition</span>
+         </a>
+      </li>
+      <li>
+         <a href="#deleteEffect" title="http://bim.aalto.fi/DiCtion/Ontology/deleteEffect">
+            <span>delete effect</span>
+         </a>
+      </li>
+      <li>
+         <a href="#executionCondition"
+            title="http://bim.aalto.fi/DiCtion/Ontology/executionCondition">
+            <span>execution condition</span>
+         </a>
+      </li>
+      <li>
+         <a href="#hasCapability"
+            title="http://bim.aalto.fi/DiCtion/Ontology/hasCapability">
+            <span>has capability</span>
+         </a>
+      </li>
+      <li>
+         <a href="#hasCondition" title="http://bim.aalto.fi/DiCtion/Ontology/hasCondition">
+            <span>has condition</span>
+         </a>
+      </li>
+      <li>
+         <a href="#hasObject" title="http://bim.aalto.fi/DiCtion/Ontology/hasObject">
+            <span>has object</span>
+         </a>
+      </li>
+      <li>
+         <a href="#hasType" title="http://bim.aalto.fi/DiCtion/Ontology/hasType">
+            <span>has type</span>
+         </a>
+      </li>
+      <li>
+         <a href="#isDerivedfrom"
+            title="http://bim.aalto.fi/DiCtion/Ontology/isDerivedfrom">
+            <span>is derivedfrom</span>
+         </a>
+      </li>
+      <li>
+         <a href="#precedes" title="http://bim.aalto.fi/DiCtion/Ontology/precedes">
+            <span>precedes</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Precondition" title="http://bim.aalto.fi/DiCtion/Ontology/Precondition">
+            <span>precondition</span>
+         </a>
+      </li>
+      <li>
+         <a href="#requires" title="http://bim.aalto.fi/DiCtion/Ontology/requires">
+            <span>requires</span>
+         </a>
+      </li>
+   </ul>
+   <div class="entity" id="addEffect">
+      <h3>add effect<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://bim.aalto.fi/DiCtion/Ontology/addEffect</p>
+      <div class="comment">
+         <span class="markdown">A relation that the execution of an  'Activity' will add some new conditions.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#hasCondition" title="http://bim.aalto.fi/DiCtion/Ontology/hasCondition">has condition</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="completionCondition">
+      <h3>completion condition<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://bim.aalto.fi/DiCtion/Ontology/completionCondition</p>
+      <div class="comment">
+         <span class="markdown">A relation of an 'Activity' and its completion condition (the condition of the activity is completed).</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#hasCondition" title="http://bim.aalto.fi/DiCtion/Ontology/hasCondition">has condition</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="deleteEffect">
+      <h3>delete effect<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://bim.aalto.fi/DiCtion/Ontology/deleteEffect</p>
+      <div class="comment">
+         <span class="markdown">A relation that the execution of an 'Activity' will remove some new conditions.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#hasCondition" title="http://bim.aalto.fi/DiCtion/Ontology/hasCondition">has condition</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="executionCondition">
+      <h3>execution condition<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://bim.aalto.fi/DiCtion/Ontology/executionCondition</p>
+      <div class="comment">
+         <span class="markdown">The relation between an 'Activity' and its execution condition (the conditions that enable the activity to be executable, also known as the constraints of executing).</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#hasCondition" title="http://bim.aalto.fi/DiCtion/Ontology/hasCondition">has condition</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasCapability">
+      <h3>has capability<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://bim.aalto.fi/DiCtion/Ontology/hasCapability</p>
+      <div class="comment">
+         <span class="markdown">A relation between a 'Resource' and its 'Capacity'</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Resource" title="http://bim.aalto.fi/DiCtion/Ontology/Resource">resource</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Capacity" title="http://bim.aalto.fi/DiCtion/Ontology/Capacity">capacity</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasCondition">
+      <h3>has condition<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://bim.aalto.fi/DiCtion/Ontology/hasCondition</p>
+      <div class="comment">
+         <span class="markdown">A relation between an 'Activity' and its conditions.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has sub-properties</dt>
+            <dd>
+               <a href="#addEffect" title="http://bim.aalto.fi/DiCtion/Ontology/addEffect">add effect</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#completionCondition"
+                  title="http://bim.aalto.fi/DiCtion/Ontology/completionCondition">completion condition</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#deleteEffect" title="http://bim.aalto.fi/DiCtion/Ontology/deleteEffect">delete effect</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#executionCondition"
+                  title="http://bim.aalto.fi/DiCtion/Ontology/executionCondition">execution condition</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#Precondition" title="http://bim.aalto.fi/DiCtion/Ontology/Precondition">precondition</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Activity" title="http://bim.aalto.fi/DiCtion/Ontology/Activity">activity</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Condition" title="http://bim.aalto.fi/DiCtion/Ontology/Condition">condition</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasObject">
+      <h3>has object<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://bim.aalto.fi/DiCtion/Ontology/hasObject</p>
+      <div class="comment">
+         <span class="markdown">A relation of between object-relevant concepts and their related domain object</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#ObjectTimeInterval"
+                  title="http://bim.aalto.fi/DiCtion/Ontology/ObjectTimeInterval">object time interval</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#DomainObject"
+                  title="http://bim.aalto.fi/DiCtion/Ontology/DomainObject">domain object</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasType">
+      <h3>has type<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://bim.aalto.fi/DiCtion/Ontology/hasType</p>
+      <div class="comment">
+         <span class="markdown">a relations indicate an instance of a concept has correspondent type.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Activity" title="http://bim.aalto.fi/DiCtion/Ontology/Activity">activity</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dd>
+               <a href="#CapabilityRequirement"
+                  title="http://bim.aalto.fi/DiCtion/Ontology/CapabilityRequirement">capability requirement</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dd>
+               <a href="#ResourceTypeRequirement"
+                  title="http://bim.aalto.fi/DiCtion/Ontology/ResourceTypeRequirement">resource type requirement</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#ActivityType"
+                  title="http://bim.aalto.fi/DiCtion/Ontology/ActivityType">activity type</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dd>
+               <a href="#CapabilityType"
+                  title="http://bim.aalto.fi/DiCtion/Ontology/CapabilityType">capability type</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dd>
+               <a href="#ResourceType"
+                  title="http://bim.aalto.fi/DiCtion/Ontology/ResourceType">resource type</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isDerivedfrom">
+      <h3>is derivedfrom<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://bim.aalto.fi/DiCtion/Ontology/isDerivedfrom</p>
+      <div class="comment">
+         <span class="markdown">A relation between 'Condition' and 'Event' that the condition information is derived from related event records.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Condition" title="http://bim.aalto.fi/DiCtion/Ontology/Condition">condition</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Event" title="http://bim.aalto.fi/DiCtion/Ontology/Event">event</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="precedes">
+      <h3>precedes<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://bim.aalto.fi/DiCtion/Ontology/precedes</p>
+      <div class="comment">
+         <span class="markdown">The squential relationship between an activity and its succesor activity</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Activity" title="http://bim.aalto.fi/DiCtion/Ontology/Activity">activity</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Activity" title="http://bim.aalto.fi/DiCtion/Ontology/Activity">activity</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="Precondition">
+      <h3>precondition<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://bim.aalto.fi/DiCtion/Ontology/Precondition</p>
+      <div class="comment">
+         <span class="markdown">A relation between an 'Activity' and its required initial condition of conduction.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#hasCondition" title="http://bim.aalto.fi/DiCtion/Ontology/hasCondition">has condition</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="requires">
+      <h3>requires<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://bim.aalto.fi/DiCtion/Ontology/requires</p>
+      <div class="comment">
+         <span class="markdown">A relation between a 'Activity' and 'Requirement' that activity requires some requirements</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Activity" title="http://bim.aalto.fi/DiCtion/Ontology/Activity">activity</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Requirement" title="http://bim.aalto.fi/DiCtion/Ontology/Requirement">requirement</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="dataproperties">
+   <h3 id="dataproperties-headline" class="list">Data Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#hasRequiredAmount"
+            title="http://bim.aalto.fi/DiCtion/Ontology/hasRequiredAmount">
+            <span>has required amount</span>
+         </a>
+      </li>
+      <li>
+         <a href="#hasUnit" title="http://bim.aalto.fi/DiCtion/Ontology/hasUnit">
+            <span>has unit</span>
+         </a>
+      </li>
+      <li>
+         <a href="#hasWorkRate" title="http://bim.aalto.fi/DiCtion/Ontology/hasWorkRate">
+            <span>has work rate</span>
+         </a>
+      </li>
+   </ul>
+   <div class="entity" id="hasRequiredAmount">
+      <h3>has required amount<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://bim.aalto.fi/DiCtion/Ontology/hasRequiredAmount</p>
+      <div class="comment">
+         <span class="markdown">a relation between quantity-relevant requirements and their required quantity</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Requirement" title="http://bim.aalto.fi/DiCtion/Ontology/Requirement">requirement</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasUnit">
+      <h3>has unit<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://bim.aalto.fi/DiCtion/Ontology/hasUnit</p>
+      <div class="comment">
+         <span class="markdown">a relation between quantity-relevant concepts and their unit</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Requirement" title="http://bim.aalto.fi/DiCtion/Ontology/Requirement">requirement</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dd>
+               <a href="#Resource" title="http://bim.aalto.fi/DiCtion/Ontology/Resource">resource</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasWorkRate">
+      <h3>has work rate<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://bim.aalto.fi/DiCtion/Ontology/hasWorkRate</p>
+      <div class="comment">
+         <span class="markdown">a relation between capacity and their numerical work-rate</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Capacity" title="http://bim.aalto.fi/DiCtion/Ontology/Capacity">capacity</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+<sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals
+</div>
+</div>
+</html>

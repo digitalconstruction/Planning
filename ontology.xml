@@ -1,0 +1,397 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://bim.aalto.fi/DiCtion/Ontology/"
+     xml:base="http://bim.aalto.fi/DiCtion/Ontology/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="http://bim.aalto.fi/DiCtion/Ontology/">
+        <owl:versionIRI rdf:resource="http://bim.aalto.fi/DiCtion/Ontology/ConstructionPlanning/0.9.1"/>
+        <terms:creator xml:lang="en">Seppo Torma</terms:creator>
+        <terms:creator xml:lang="en">Yuan Zheng</terms:creator>
+        <rdfs:comment xml:lang="en">The construction planning ontology is one module of DiCtion Shared Situation Awareness ontology that refers the collection of concepts and relationships that are relevant with the the construction planning process. The construction planning process is activity-oriented that focus on what kind of conditions an activity has and what kinds of resource the activity is requiring.</rdfs:comment>
+        <owl:versionInfo xml:lang="en">0.9.1</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://bim.aalto.fi/DiCtion/Ontology/Precondition -->
+
+
+    <owl:ObjectProperty rdf:about="http://bim.aalto.fi/DiCtion/Ontology/Precondition">
+        <rdfs:subPropertyOf rdf:resource="http://bim.aalto.fi/DiCtion/Ontology/hasCondition"/>
+        <rdfs:comment xml:lang="en">A relation between an &apos;Activity&apos; and its required initial condition of conduction.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://bim.aalto.fi/DiCtion/Ontology/addEffect -->
+
+
+    <owl:ObjectProperty rdf:about="http://bim.aalto.fi/DiCtion/Ontology/addEffect">
+        <rdfs:subPropertyOf rdf:resource="http://bim.aalto.fi/DiCtion/Ontology/hasCondition"/>
+        <rdfs:comment xml:lang="en">A relation that the execution of an  &apos;Activity&apos; will add some new conditions.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://bim.aalto.fi/DiCtion/Ontology/completionCondition -->
+
+
+    <owl:ObjectProperty rdf:about="http://bim.aalto.fi/DiCtion/Ontology/completionCondition">
+        <rdfs:subPropertyOf rdf:resource="http://bim.aalto.fi/DiCtion/Ontology/hasCondition"/>
+        <rdfs:comment xml:lang="en">A relation of an &apos;Activity&apos; and its completion condition (the condition of the activity is completed).</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://bim.aalto.fi/DiCtion/Ontology/deleteEffect -->
+
+
+    <owl:ObjectProperty rdf:about="http://bim.aalto.fi/DiCtion/Ontology/deleteEffect">
+        <rdfs:subPropertyOf rdf:resource="http://bim.aalto.fi/DiCtion/Ontology/hasCondition"/>
+        <rdfs:comment xml:lang="en">A relation that the execution of an &apos;Activity&apos; will remove some new conditions.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://bim.aalto.fi/DiCtion/Ontology/executionCondition -->
+
+
+    <owl:ObjectProperty rdf:about="http://bim.aalto.fi/DiCtion/Ontology/executionCondition">
+        <rdfs:subPropertyOf rdf:resource="http://bim.aalto.fi/DiCtion/Ontology/hasCondition"/>
+        <rdfs:comment xml:lang="en">The relation between an &apos;Activity&apos; and its execution condition (the conditions that enable the activity to be executable, also known as the constraints of executing).</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://bim.aalto.fi/DiCtion/Ontology/hasCapability -->
+
+
+    <owl:ObjectProperty rdf:about="http://bim.aalto.fi/DiCtion/Ontology/hasCapability">
+        <rdfs:domain rdf:resource="http://bim.aalto.fi/DiCtion/Ontology/Resource"/>
+        <rdfs:range rdf:resource="http://bim.aalto.fi/DiCtion/Ontology/Capacity"/>
+        <rdfs:comment xml:lang="en">A relation between a &apos;Resource&apos; and its &apos;Capacity&apos;</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://bim.aalto.fi/DiCtion/Ontology/hasCondition -->
+
+
+    <owl:ObjectProperty rdf:about="http://bim.aalto.fi/DiCtion/Ontology/hasCondition">
+        <rdfs:domain rdf:resource="http://bim.aalto.fi/DiCtion/Ontology/Activity"/>
+        <rdfs:range rdf:resource="http://bim.aalto.fi/DiCtion/Ontology/Condition"/>
+        <rdfs:comment xml:lang="en">A relation between an &apos;Activity&apos; and its conditions.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://bim.aalto.fi/DiCtion/Ontology/hasObject -->
+
+
+    <owl:ObjectProperty rdf:about="http://bim.aalto.fi/DiCtion/Ontology/hasObject">
+        <rdfs:domain rdf:resource="http://bim.aalto.fi/DiCtion/Ontology/ObjectTimeInterval"/>
+        <rdfs:range rdf:resource="http://bim.aalto.fi/DiCtion/Ontology/DomainObject"/>
+        <rdfs:comment xml:lang="en">A relation of between object-relevant concepts and their related domain object</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://bim.aalto.fi/DiCtion/Ontology/hasType -->
+
+
+    <owl:ObjectProperty rdf:about="http://bim.aalto.fi/DiCtion/Ontology/hasType">
+        <rdfs:domain rdf:resource="http://bim.aalto.fi/DiCtion/Ontology/Activity"/>
+        <rdfs:domain rdf:resource="http://bim.aalto.fi/DiCtion/Ontology/CapabilityRequirement"/>
+        <rdfs:domain rdf:resource="http://bim.aalto.fi/DiCtion/Ontology/ResourceTypeRequirement"/>
+        <rdfs:range rdf:resource="http://bim.aalto.fi/DiCtion/Ontology/ActivityType"/>
+        <rdfs:range rdf:resource="http://bim.aalto.fi/DiCtion/Ontology/CapabilityType"/>
+        <rdfs:range rdf:resource="http://bim.aalto.fi/DiCtion/Ontology/ResourceType"/>
+        <rdfs:comment xml:lang="en">a relations indicate an instance of a concept has correspondent type.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://bim.aalto.fi/DiCtion/Ontology/isDerivedfrom -->
+
+
+    <owl:ObjectProperty rdf:about="http://bim.aalto.fi/DiCtion/Ontology/isDerivedfrom">
+        <rdfs:domain rdf:resource="http://bim.aalto.fi/DiCtion/Ontology/Condition"/>
+        <rdfs:range rdf:resource="http://bim.aalto.fi/DiCtion/Ontology/Event"/>
+        <rdfs:comment xml:lang="en">A relation between &apos;Condition&apos; and &apos;Event&apos; that the condition information is derived from related event records.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://bim.aalto.fi/DiCtion/Ontology/precedes -->
+
+
+    <owl:ObjectProperty rdf:about="http://bim.aalto.fi/DiCtion/Ontology/precedes">
+        <rdfs:domain rdf:resource="http://bim.aalto.fi/DiCtion/Ontology/Activity"/>
+        <rdfs:range rdf:resource="http://bim.aalto.fi/DiCtion/Ontology/Activity"/>
+        <rdfs:comment>The squential relationship between an activity and its succesor activity</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://bim.aalto.fi/DiCtion/Ontology/requires -->
+
+
+    <owl:ObjectProperty rdf:about="http://bim.aalto.fi/DiCtion/Ontology/requires">
+        <rdfs:domain rdf:resource="http://bim.aalto.fi/DiCtion/Ontology/Activity"/>
+        <rdfs:range rdf:resource="http://bim.aalto.fi/DiCtion/Ontology/Requirement"/>
+        <rdfs:comment>A relation between a &apos;Activity&apos; and &apos;Requirement&apos; that activity requires some requirements</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://bim.aalto.fi/DiCtion/Ontology/hasRequiredAmount -->
+
+
+    <owl:DatatypeProperty rdf:about="http://bim.aalto.fi/DiCtion/Ontology/hasRequiredAmount">
+        <rdfs:domain rdf:resource="http://bim.aalto.fi/DiCtion/Ontology/Requirement"/>
+        <rdfs:comment>a relation between quantity-relevant requirements and their required quantity</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://bim.aalto.fi/DiCtion/Ontology/hasUnit -->
+
+
+    <owl:DatatypeProperty rdf:about="http://bim.aalto.fi/DiCtion/Ontology/hasUnit">
+        <rdfs:domain rdf:resource="http://bim.aalto.fi/DiCtion/Ontology/Requirement"/>
+        <rdfs:domain rdf:resource="http://bim.aalto.fi/DiCtion/Ontology/Resource"/>
+        <rdfs:comment>a relation between quantity-relevant concepts and their unit</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://bim.aalto.fi/DiCtion/Ontology/hasWorkRate -->
+
+
+    <owl:DatatypeProperty rdf:about="http://bim.aalto.fi/DiCtion/Ontology/hasWorkRate">
+        <rdfs:domain rdf:resource="http://bim.aalto.fi/DiCtion/Ontology/Capacity"/>
+        <rdfs:comment>a relation between capacity and their numerical work-rate</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://bim.aalto.fi/DiCtion/Ontology/Activity -->
+
+
+    <owl:Class rdf:about="http://bim.aalto.fi/DiCtion/Ontology/Activity">
+        <rdfs:subClassOf rdf:resource="http://bim.aalto.fi/DiCtion/Ontology/DomainObject"/>
+        <rdfs:subClassOf rdf:resource="http://bim.aalto.fi/DiCtion/Ontology/ObjectTimeInterval"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bim.aalto.fi/DiCtion/Ontology/hasType"/>
+                <owl:allValuesFrom rdf:resource="http://bim.aalto.fi/DiCtion/Ontology/ActivityType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Activity is the concept refers to all the works (or aggregations of works) that carried out in a construction project.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://bim.aalto.fi/DiCtion/Ontology/ActivityType -->
+
+
+    <owl:Class rdf:about="http://bim.aalto.fi/DiCtion/Ontology/ActivityType">
+        <rdfs:comment xml:lang="en">The type of the activity</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://bim.aalto.fi/DiCtion/Ontology/CapabilityRequirement -->
+
+
+    <owl:Class rdf:about="http://bim.aalto.fi/DiCtion/Ontology/CapabilityRequirement">
+        <rdfs:subClassOf rdf:resource="http://bim.aalto.fi/DiCtion/Ontology/Requirement"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bim.aalto.fi/DiCtion/Ontology/hasType"/>
+                <owl:allValuesFrom rdf:resource="http://bim.aalto.fi/DiCtion/Ontology/CapabilityType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Capability requirement refers that an activity requires the resource should have specific capability.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://bim.aalto.fi/DiCtion/Ontology/CapabilityType -->
+
+
+    <owl:Class rdf:about="http://bim.aalto.fi/DiCtion/Ontology/CapabilityType">
+        <rdfs:comment xml:lang="en">The type of the capability that the resource has</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://bim.aalto.fi/DiCtion/Ontology/Capacity -->
+
+
+    <owl:Class rdf:about="http://bim.aalto.fi/DiCtion/Ontology/Capacity">
+        <rdfs:comment xml:lang="en">Capacity concept refers to the maxium amount of a resource or material that is provided to the construction site.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://bim.aalto.fi/DiCtion/Ontology/Condition -->
+
+
+    <owl:Class rdf:about="http://bim.aalto.fi/DiCtion/Ontology/Condition">
+        <rdfs:subClassOf rdf:resource="http://bim.aalto.fi/DiCtion/Ontology/ObjectTimeInterval"/>
+        <rdfs:comment xml:lang="en">Condition is a concept to capture a semantically meaningful state of an object, such as its location or temperature at a level that is needed for construction management.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://bim.aalto.fi/DiCtion/Ontology/DomainObject -->
+
+
+    <owl:Class rdf:about="http://bim.aalto.fi/DiCtion/Ontology/DomainObject">
+        <rdfs:comment xml:lang="en">Domain objects is a abstract concept that refers to all the central objects that are discussed in the construction project planning and management. Sub-classes of the domain object include the &apos;Activity&apos;,&apos;Group&apos;,&apos;Information Entity&apos;,&apos;Physical Entity&apos;,and &apos;Resource&apos;.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://bim.aalto.fi/DiCtion/Ontology/Event -->
+
+
+    <owl:Class rdf:about="http://bim.aalto.fi/DiCtion/Ontology/Event">
+        <rdfs:subClassOf rdf:resource="http://bim.aalto.fi/DiCtion/Ontology/InformationEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bim.aalto.fi/DiCtion/Ontology/InformationEntity -->
+
+
+    <owl:Class rdf:about="http://bim.aalto.fi/DiCtion/Ontology/InformationEntity">
+        <rdfs:subClassOf rdf:resource="http://bim.aalto.fi/DiCtion/Ontology/DomainObject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bim.aalto.fi/DiCtion/Ontology/ObjectTimeInterval -->
+
+
+    <owl:Class rdf:about="http://bim.aalto.fi/DiCtion/Ontology/ObjectTimeInterval">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2006/time#Interval"/>
+        <rdfs:comment xml:lang="en">A temporal entity with an extent or duration that has related domain object.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://bim.aalto.fi/DiCtion/Ontology/Requirement -->
+
+
+    <owl:Class rdf:about="http://bim.aalto.fi/DiCtion/Ontology/Requirement">
+        <rdfs:comment xml:lang="en">The requirement concept refers to the request of the resource for one activity, which including capability requirement and the resource type requirement of the resource.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://bim.aalto.fi/DiCtion/Ontology/Resource -->
+
+
+    <owl:Class rdf:about="http://bim.aalto.fi/DiCtion/Ontology/Resource">
+        <rdfs:subClassOf rdf:resource="http://bim.aalto.fi/DiCtion/Ontology/DomainObject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://bim.aalto.fi/DiCtion/Ontology/ResourceType -->
+
+
+    <owl:Class rdf:about="http://bim.aalto.fi/DiCtion/Ontology/ResourceType">
+        <rdfs:comment xml:lang="en">The type of the resource</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://bim.aalto.fi/DiCtion/Ontology/ResourceTypeRequirement -->
+
+
+    <owl:Class rdf:about="http://bim.aalto.fi/DiCtion/Ontology/ResourceTypeRequirement">
+        <rdfs:subClassOf rdf:resource="http://bim.aalto.fi/DiCtion/Ontology/Requirement"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bim.aalto.fi/DiCtion/Ontology/hasType"/>
+                <owl:allValuesFrom rdf:resource="http://bim.aalto.fi/DiCtion/Ontology/ResourceType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Resource Type requirement refers that an activity requires the resource should have specific type.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2006/time#Interval -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2006/time#Interval"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.7) https://github.com/owlcs/owlapi/ -->
+
+

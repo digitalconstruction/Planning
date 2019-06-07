@@ -1,0 +1,685 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.4), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2000/01/rdf-schema", "http://bim.aalto.fi/DiCtion/Ontology", "http://www.w3.org/2001/XMLSchema", "http://www.w3.org/2006/time" ],
+    "iri" : "http://bim.aalto.fi/DiCtion/Ontology/",
+    "version" : "0.9.1",
+    "author" : [ "Yuan Zheng", "Seppo Torma" ],
+    "comments" : {
+      "en" : "The construction planning ontology is one module of DiCtion Shared Situation Awareness ontology that refers the collection of concepts and relationships that are relevant with the the construction planning process. The construction planning process is activity-oriented that focus on what kind of conditions an activity has and what kinds of resource the activity is requiring."
+    },
+    "other" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "en",
+        "value" : "Seppo Torma",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "en",
+        "value" : "Yuan Zheng",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "en",
+        "value" : "0.9.1",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "metrics" : {
+    "classCount" : 15,
+    "objectPropertyCount" : 12,
+    "datatypePropertyCount" : 3,
+    "individualCount" : 0
+  },
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "8",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "35",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "36",
+    "type" : "owl:Class"
+  }, {
+    "id" : "39",
+    "type" : "owl:Class"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "37",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "27",
+    "type" : "owl:Class"
+  }, {
+    "id" : "38",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.w3.org/2006/time#Interval",
+    "baseIri" : "http://www.w3.org/2006/time",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Interval"
+    },
+    "subClasses" : [ "1" ],
+    "attributes" : [ "external" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://bim.aalto.fi/DiCtion/Ontology/ObjectTimeInterval",
+    "baseIri" : "http://bim.aalto.fi/DiCtion/Ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ObjectTimeInterval"
+    },
+    "subClasses" : [ "2", "3" ],
+    "comment" : {
+      "en" : "A temporal entity with an extent or duration that has related domain object."
+    },
+    "id" : "1",
+    "superClasses" : [ "0" ]
+  }, {
+    "iri" : "http://bim.aalto.fi/DiCtion/Ontology/InformationEntity",
+    "baseIri" : "http://bim.aalto.fi/DiCtion/Ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "InformationEntity"
+    },
+    "subClasses" : [ "6" ],
+    "id" : "4",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://bim.aalto.fi/DiCtion/Ontology/Condition",
+    "baseIri" : "http://bim.aalto.fi/DiCtion/Ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Condition"
+    },
+    "comment" : {
+      "en" : "Condition is a concept to capture a semantically meaningful state of an object, such as its location or temperature at a level that is needed for construction management."
+    },
+    "id" : "2",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://bim.aalto.fi/DiCtion/Ontology/Resource",
+    "baseIri" : "http://bim.aalto.fi/DiCtion/Ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Resource"
+    },
+    "id" : "13",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://bim.aalto.fi/DiCtion/Ontology/DomainObject",
+    "baseIri" : "http://bim.aalto.fi/DiCtion/Ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DomainObject"
+    },
+    "subClasses" : [ "13", "3", "4" ],
+    "comment" : {
+      "en" : "Domain objects is a abstract concept that refers to all the central objects that are discussed in the construction project planning and management. Sub-classes of the domain object include the 'Activity','Group','Information Entity','Physical Entity',and 'Resource'."
+    },
+    "id" : "5"
+  }, {
+    "iri" : "http://bim.aalto.fi/DiCtion/Ontology/Capacity",
+    "baseIri" : "http://bim.aalto.fi/DiCtion/Ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Capacity"
+    },
+    "comment" : {
+      "en" : "Capacity concept refers to the maxium amount of a resource or material that is provided to the construction site."
+    },
+    "id" : "11"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "12",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "8",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "35",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://bim.aalto.fi/DiCtion/Ontology/Requirement",
+    "baseIri" : "http://bim.aalto.fi/DiCtion/Ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Requirement"
+    },
+    "subClasses" : [ "27", "20" ],
+    "comment" : {
+      "en" : "The requirement concept refers to the request of the resource for one activity, which including capability requirement and the resource type requirement of the resource."
+    },
+    "id" : "17"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "24",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://bim.aalto.fi/DiCtion/Ontology/Activity",
+    "baseIri" : "http://bim.aalto.fi/DiCtion/Ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Activity"
+    },
+    "comment" : {
+      "en" : "Activity is the concept refers to all the works (or aggregations of works) that carried out in a construction project."
+    },
+    "id" : "3",
+    "superClasses" : [ "5", "1" ]
+  }, {
+    "instances" : 0,
+    "union" : [ "37", "34", "38" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "36"
+  }, {
+    "instances" : 0,
+    "union" : [ "3", "27", "20" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "39"
+  }, {
+    "instances" : 0,
+    "union" : [ "13", "17" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "23"
+  }, {
+    "iri" : "http://bim.aalto.fi/DiCtion/Ontology/CapabilityRequirement",
+    "baseIri" : "http://bim.aalto.fi/DiCtion/Ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CapabilityRequirement"
+    },
+    "comment" : {
+      "en" : "Capability requirement refers that an activity requires the resource should have specific capability."
+    },
+    "id" : "20",
+    "superClasses" : [ "17" ]
+  }, {
+    "iri" : "http://bim.aalto.fi/DiCtion/Ontology/ActivityType",
+    "baseIri" : "http://bim.aalto.fi/DiCtion/Ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ActivityType"
+    },
+    "comment" : {
+      "en" : "The type of the activity"
+    },
+    "id" : "37"
+  }, {
+    "iri" : "http://bim.aalto.fi/DiCtion/Ontology/ResourceType",
+    "baseIri" : "http://bim.aalto.fi/DiCtion/Ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ResourceType"
+    },
+    "comment" : {
+      "en" : "The type of the resource"
+    },
+    "id" : "34"
+  }, {
+    "iri" : "http://bim.aalto.fi/DiCtion/Ontology/Event",
+    "baseIri" : "http://bim.aalto.fi/DiCtion/Ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Event"
+    },
+    "id" : "6",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://bim.aalto.fi/DiCtion/Ontology/ResourceTypeRequirement",
+    "baseIri" : "http://bim.aalto.fi/DiCtion/Ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ResourceTypeRequirement"
+    },
+    "comment" : {
+      "en" : "Resource Type requirement refers that an activity requires the resource should have specific type."
+    },
+    "id" : "27",
+    "superClasses" : [ "17" ]
+  }, {
+    "iri" : "http://bim.aalto.fi/DiCtion/Ontology/CapabilityType",
+    "baseIri" : "http://bim.aalto.fi/DiCtion/Ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CapabilityType"
+    },
+    "comment" : {
+      "en" : "The type of the capability that the resource has"
+    },
+    "id" : "38"
+  } ],
+  "property" : [ {
+    "id" : "7",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "10",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "14",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "15",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "16",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "18",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "19",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "21",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "22",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "25",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "26",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "28",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "29",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "30",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "31",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "32",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "33",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "40",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "41",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "42",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "43",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "44",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "45",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "9",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "48",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "46",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "47",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://bim.aalto.fi/DiCtion/Ontology/executionCondition",
+    "baseIri" : "http://bim.aalto.fi/DiCtion/Ontology",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "executionCondition"
+    },
+    "superproperty" : [ "9" ],
+    "domain" : "8",
+    "comment" : {
+      "en" : "The relation between an 'Activity' and its execution condition (the conditions that enable the activity to be executable, also known as the constraints of executing)."
+    },
+    "attributes" : [ "object" ],
+    "id" : "7"
+  }, {
+    "iri" : "http://bim.aalto.fi/DiCtion/Ontology/hasWorkRate",
+    "baseIri" : "http://bim.aalto.fi/DiCtion/Ontology",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "hasWorkRate"
+    },
+    "domain" : "11",
+    "comment" : {
+      "undefined" : "a relation between capacity and their numerical work-rate"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "10"
+  }, {
+    "iri" : "http://bim.aalto.fi/DiCtion/Ontology/hasCapability",
+    "baseIri" : "http://bim.aalto.fi/DiCtion/Ontology",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "hasCapability"
+    },
+    "domain" : "13",
+    "comment" : {
+      "en" : "A relation between a 'Resource' and its 'Capacity'"
+    },
+    "attributes" : [ "object" ],
+    "id" : "14"
+  }, {
+    "iri" : "http://bim.aalto.fi/DiCtion/Ontology/precedes",
+    "baseIri" : "http://bim.aalto.fi/DiCtion/Ontology",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "precedes"
+    },
+    "domain" : "3",
+    "comment" : {
+      "undefined" : "The squential relationship between an activity and its succesor activity"
+    },
+    "attributes" : [ "object" ],
+    "id" : "15"
+  }, {
+    "iri" : "http://bim.aalto.fi/DiCtion/Ontology/requires",
+    "baseIri" : "http://bim.aalto.fi/DiCtion/Ontology",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "requires"
+    },
+    "domain" : "3",
+    "comment" : {
+      "undefined" : "A relation between a 'Activity' and 'Requirement' that activity requires some requirements"
+    },
+    "attributes" : [ "object" ],
+    "id" : "16"
+  }, {
+    "range" : "4",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "18"
+  }, {
+    "range" : "17",
+    "domain" : "20",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "19"
+  }, {
+    "range" : "1",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "21"
+  }, {
+    "iri" : "http://bim.aalto.fi/DiCtion/Ontology/hasUnit",
+    "baseIri" : "http://bim.aalto.fi/DiCtion/Ontology",
+    "range" : "24",
+    "label" : {
+      "IRI-based" : "hasUnit"
+    },
+    "domain" : "23",
+    "comment" : {
+      "undefined" : "a relation between quantity-relevant concepts and their unit"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "22"
+  }, {
+    "range" : "5",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "25"
+  }, {
+    "range" : "17",
+    "domain" : "27",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "26"
+  }, {
+    "range" : "1",
+    "domain" : "3",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "28"
+  }, {
+    "range" : "0",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "29"
+  }, {
+    "range" : "5",
+    "domain" : "3",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "30"
+  }, {
+    "range" : "5",
+    "domain" : "13",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "31"
+  }, {
+    "iri" : "http://bim.aalto.fi/DiCtion/Ontology/hasObject",
+    "baseIri" : "http://bim.aalto.fi/DiCtion/Ontology",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "hasObject"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "A relation of between object-relevant concepts and their related domain object"
+    },
+    "attributes" : [ "object" ],
+    "id" : "32"
+  }, {
+    "iri" : "http://bim.aalto.fi/DiCtion/Ontology/hasType",
+    "baseIri" : "http://bim.aalto.fi/DiCtion/Ontology",
+    "range" : "34",
+    "label" : {
+      "IRI-based" : "hasType"
+    },
+    "domain" : "27",
+    "comment" : {
+      "en" : "a relations indicate an instance of a concept has correspondent type."
+    },
+    "attributes" : [ "allValues", "object" ],
+    "id" : "33"
+  }, {
+    "iri" : "http://bim.aalto.fi/DiCtion/Ontology/hasRequiredAmount",
+    "baseIri" : "http://bim.aalto.fi/DiCtion/Ontology",
+    "range" : "35",
+    "label" : {
+      "IRI-based" : "hasRequiredAmount"
+    },
+    "domain" : "17",
+    "comment" : {
+      "undefined" : "a relation between quantity-relevant requirements and their required quantity"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "40"
+  }, {
+    "iri" : "http://bim.aalto.fi/DiCtion/Ontology/hasType",
+    "baseIri" : "http://bim.aalto.fi/DiCtion/Ontology",
+    "range" : "37",
+    "label" : {
+      "IRI-based" : "hasType"
+    },
+    "domain" : "3",
+    "comment" : {
+      "en" : "a relations indicate an instance of a concept has correspondent type."
+    },
+    "attributes" : [ "allValues", "object" ],
+    "id" : "41"
+  }, {
+    "iri" : "http://bim.aalto.fi/DiCtion/Ontology/hasType",
+    "baseIri" : "http://bim.aalto.fi/DiCtion/Ontology",
+    "range" : "38",
+    "label" : {
+      "IRI-based" : "hasType"
+    },
+    "domain" : "20",
+    "comment" : {
+      "en" : "a relations indicate an instance of a concept has correspondent type."
+    },
+    "attributes" : [ "allValues", "object" ],
+    "id" : "42"
+  }, {
+    "iri" : "http://bim.aalto.fi/DiCtion/Ontology/deleteEffect",
+    "baseIri" : "http://bim.aalto.fi/DiCtion/Ontology",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "deleteEffect"
+    },
+    "superproperty" : [ "9" ],
+    "domain" : "8",
+    "comment" : {
+      "en" : "A relation that the execution of an 'Activity' will remove some new conditions."
+    },
+    "attributes" : [ "object" ],
+    "id" : "43"
+  }, {
+    "iri" : "http://bim.aalto.fi/DiCtion/Ontology/hasType",
+    "baseIri" : "http://bim.aalto.fi/DiCtion/Ontology",
+    "range" : "36",
+    "label" : {
+      "IRI-based" : "hasType"
+    },
+    "domain" : "39",
+    "comment" : {
+      "en" : "a relations indicate an instance of a concept has correspondent type."
+    },
+    "attributes" : [ "object" ],
+    "id" : "44"
+  }, {
+    "iri" : "http://bim.aalto.fi/DiCtion/Ontology/addEffect",
+    "baseIri" : "http://bim.aalto.fi/DiCtion/Ontology",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "addEffect"
+    },
+    "superproperty" : [ "9" ],
+    "domain" : "8",
+    "comment" : {
+      "en" : "A relation that the execution of an  'Activity' will add some new conditions."
+    },
+    "attributes" : [ "object" ],
+    "id" : "45"
+  }, {
+    "iri" : "http://bim.aalto.fi/DiCtion/Ontology/hasCondition",
+    "baseIri" : "http://bim.aalto.fi/DiCtion/Ontology",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "hasCondition"
+    },
+    "domain" : "3",
+    "subproperty" : [ "46", "45", "47", "43", "7" ],
+    "comment" : {
+      "en" : "A relation between an 'Activity' and its conditions."
+    },
+    "attributes" : [ "object" ],
+    "id" : "9"
+  }, {
+    "iri" : "http://bim.aalto.fi/DiCtion/Ontology/isDerivedfrom",
+    "baseIri" : "http://bim.aalto.fi/DiCtion/Ontology",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "isDerivedfrom"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "A relation between 'Condition' and 'Event' that the condition information is derived from related event records."
+    },
+    "attributes" : [ "object" ],
+    "id" : "48"
+  }, {
+    "iri" : "http://bim.aalto.fi/DiCtion/Ontology/Precondition",
+    "baseIri" : "http://bim.aalto.fi/DiCtion/Ontology",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "Precondition"
+    },
+    "superproperty" : [ "9" ],
+    "domain" : "8",
+    "comment" : {
+      "en" : "A relation between an 'Activity' and its required initial condition of conduction."
+    },
+    "attributes" : [ "object" ],
+    "id" : "46"
+  }, {
+    "iri" : "http://bim.aalto.fi/DiCtion/Ontology/completionCondition",
+    "baseIri" : "http://bim.aalto.fi/DiCtion/Ontology",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "completionCondition"
+    },
+    "superproperty" : [ "9" ],
+    "domain" : "8",
+    "comment" : {
+      "en" : "A relation of an 'Activity' and its completion condition (the condition of the activity is completed)."
+    },
+    "attributes" : [ "object" ],
+    "id" : "47"
+  } ]
+}
